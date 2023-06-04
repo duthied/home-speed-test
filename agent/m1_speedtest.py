@@ -21,7 +21,7 @@ upload = re.search('Upload:\s+(.*?)\s', response, re.MULTILINE)
 jitter = re.search('Latency:.*?jitter:\s+(.*?)ms', response, re.MULTILINE)
 
 source = this_host
-ping = ping.group(1)
+ping = ping.group(1)-
 download = download.group(1)
 upload = upload.group(1)
 jitter = jitter.group(1)
